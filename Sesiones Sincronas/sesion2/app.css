@@ -1,0 +1,17 @@
+h1 {
+    color: blueviolet;
+}
+
+#btn_yes{
+    background-color: aquamarine;
+    border-color: aqua;
+    color: chocolate;
+    font-size: xx-large;
+    padding: 32px;
+    border-radius: 10px;
+    margin: 32px;
+}
+
+button:hover{
+    cursor: pointer;
+}
