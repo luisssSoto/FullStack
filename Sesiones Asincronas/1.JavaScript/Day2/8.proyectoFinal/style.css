@@ -1,0 +1,81 @@
+/* 1. dos clases
+2. etiquetas <div>
+3. reemplazar formatos por <span>
+4. usar los 3 tipos de selectores:
+a) de tipo, de clase, y de id
+b) de atributo
+c) de pseudo-clase y pseudo-elemento
+5. al menos un combinador  
+*/
+body{
+    background-color: antiquewhite;
+}
+
+.principal{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    color: rgb(54, 54, 54);
+    text-align: center;
+    margin: 30px 250px;
+}
+
+.secundario{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(182, 182, 182);
+    margin: 10px 200px;
+}
+
+.division{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+}
+
+#ex-formato{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(202, 228, 252);
+}
+
+/* atributo */
+a[href*=".google"]{
+    background-color: crimson;
+}
+
+a[href*="index"]{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+    text-align: right;
+}
+h1:hover{
+    font-size: 40px;
+    margin: 30px;
+    background-color: rgb(83, 73, 73);
+}
+
+p::first-line{
+    background-color: rgb(181, 222, 222);
+}
+
+dt + dd{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    text-align: right;
+    background-color: beige;
+}
+
+div dt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: right;
+    background-color: rgb(86, 86, 86);
+    border-style: groove;
+    border-color: black;
+    margin-left: 700px;
+}
+
+
+
