@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input segunda parte</title>
+</head>
+<body>
+    <p>Ingresa tu nombre: </p>
+    <br>
+    <input type="text" id="nombreUsuario">
+    <button onClick="cambiarContenido()">Enviar respuesta</button>
+    <h1 id="salida">No se tu nombre</h1>
+
+    <script>
+        function cambiarContenido(){
+            let userName = document.getElementById("nombreUsuario");
+            let elementText = document.getElementById("salida");
+            elementText.textContent = "Hola " + userName.value
+        }
+    </script>
+    
+</body>
+</html>
