@@ -1,0 +1,32 @@
+/* Combinadores..*/
+
+/*Combinador descendiente 
+Todos los elementos p que esten dentro de un elemento div*/
+
+div p{
+    color: green;
+}
+
+/*Combinador hijo directo
+Todos los elementos li que sean hijos directos de ol*/
+ol > li{
+    font-weight: bolder;
+}
+
+/* Combinador hermanos adjacentes
+El elemento h3 que este inmediatamente despues de h2 */
+h2 + h3{
+    background-color: lightskyblue;
+}
+
+/* Combinador hermanos generales
+Todos los elementos h3 que esten despues de h2*/
+h2 ~ h3{
+    font-size: 32px;
+    border: 5px;
+    border-style: solid;
+}
+
+div p[align = "left"]:hover{
+    background-color: gold;
+}
