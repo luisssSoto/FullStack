@@ -1,0 +1,21 @@
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: olive;
+    width: 120px;
+    height: 80px;
+    margin-left: 45%;
+    padding: 30px;
+    border: 4px;
+    border-style: solid;
+    border-color: rgb(74, 74, 1);
+    border-radius: 20px;
+    text-align: left;
+    
+}
+
+button:hover{
+    width: 140px;
+    height: 100px;
+}
