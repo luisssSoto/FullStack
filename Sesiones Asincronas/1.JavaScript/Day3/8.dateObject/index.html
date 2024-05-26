@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object</title>
+    <style>
+        audio::-webkit-media-controls-panel{
+            background-color: orange;
+        }
+        #tiempo{
+            text-align: center;
+            font-size: 52px;
+            font-family: arial;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body onload="comenzarStartTime()">
+    <p>Rapido LATAM 🌎 te necesita, configura los segundos para la transformacion</p>
+    <input type="number" id="segundos">
+    <br><br>
+    <button onClick="alarmaSonando(), settingAlarm()">Enviar configuracion</button>
+    <h1 id="salida">Todavia no puedo transformarme en el supersaiyajin </h1>
+    <h1 id="tiempo">00:00:00</h1>
+
+    <audio src="audio/dragon-ball-gt-super-saiyan.mp3" id="audioAlarma" controls="controls">
+    </audio>
+
+    <script>
+        let mainText = document.getElementById("salida");
+        let seconds = document.getElementById("segundos");
+        let audio = document.getElementById("audioAlarma");
+        let time = document.getElementById("tiempo");
+
+        function settingAlarm(){
+            mainText.textContent = `Tiempo para la transformacion en  ${seconds.value} segundos`
+            mainText.style.color = "orange";
+        }
+
+        function alarmaSonando(){
+            setTimeout(tiempoDeLevantarse, 1000 * seconds.value);
+        }
+        function tiempoDeLevantarse(){
+            mainText.textContent = "Es hora de ser super saijayin!!!";
+            mainText.style.color = "yellow";
+            audio.play();
+            mainText.textContent = "Transformacion completada 💪"
+        }
+
+        function comenzarStartTime(){
+            setInterval(startTime,1000);
+        }
+
+        function startTime(){
+            let currentTime = new Date();
+            let hours = String(currentTime.getHours()).padStart(2, "0");
+            let minutes = String(currentTime.getMinutes()).padStart(2, "0");
+            let seconds = String(currentTime.getSeconds()).padStart(2, "0");
+
+            let printHour = hours + ":" + minutes + ":" + seconds;
+            time.textContent = printHour;
+        }
+    </script>
+    
+</body>
+</html>
