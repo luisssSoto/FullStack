@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parametros</title>
+</head>
+<body>
+    <p>Ingresa primer valor</p>
+    <input type="number" id="primerValor">
+    <br>
+    <p>Ingresa el segundo valor: </p>
+    <input type="number" id="segundoValor">
+    <br><br>
+    <button onclick="llamarASumar()" id="calcular">Calcular</button>
+    <br>
+    <h2 id="resultado">0</h2>
+
+    <script>
+        function sumar(valor1, valor2){
+            let resultado = +valor1 + +valor2;
+            return resultado;
+        }
+
+        function llamarASumar(){
+            let elementoValor1 = document.getElementById("primerValor");
+            let elementoValor2 = document.getElementById("segundoValor");
+            let elementoText = document.getElementById("resultado");
+            let resultado = sumar(elementoValor1.value, elementoValor2.value);
+
+            elementoText.textContent = resultado;
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
