@@ -32,3 +32,4 @@ let colegio1 = new Colegio('San Martin', 'Av. Patria', 450);
 console.log(colegio1.nombre);
 colegio1.nombre = 'San Francisco';
 console.log(colegio1.nombre);
+}
