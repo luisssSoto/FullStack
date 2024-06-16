@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute} from '@angular/router';
 import { HousingService } from '../housing.service';
 import { HousingLocation } from '../housing-location';
+import {FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-details',
   standalone: true,
-  imports: [CommonModule],
+  imports:[CommonModule, ReactiveFormsModule],
   template: `
     <article>
       <img
@@ -28,6 +29,18 @@ import { HousingLocation } from '../housing-location';
           <li>Does this location have laundry: {{ housingLocation?.laundry }}</li>
         </ul>
       </section>
+      <section class="listing-apply">
+    <h2 class="section-heading">Apply now to live here</h2>
+    <form action="" [formGroup]="applyForm" (submit)="submitApplication()">
+      <label for="firstName">First Name</label>
+      <input type="text" id="first-name" formControlName="firstName">
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" formControlName="lastName">
+      <label for="email">Email</label>
+      <input type="email" id="email" formControlName="email">
+      <button type="submit" class="primary">Apply now</button>
+    </form>
+  </section>
     </article>
   `,
   styleUrl: `./details.component.css`
@@ -37,8 +50,23 @@ export class DetailsComponent {
   housingService = inject(HousingService);
   housingLocation: HousingLocation | undefined;
 
+  applyForm = new FormGroup({
+    firstName: new FormControl(''),
+    lastName: new FormControl(''),
+    email: new FormControl(''),
+  });
+
   constructor(){
+    // you can parse it also by using this function "parseInt" instead "Number"
     const housingLocationId = Number(this.route.snapshot.params['id']);
     this.housingLocation = this.housingService.getHousingLocationById(housingLocationId);
+  }
+
+  submitApplication(){
+    this.housingService.subtmitApplication(
+      this.applyForm.value.firstName ?? '',
+      this.applyForm.value.lastName ?? '',
+      this.applyForm.value.email ?? '',
+    );
   }
 }

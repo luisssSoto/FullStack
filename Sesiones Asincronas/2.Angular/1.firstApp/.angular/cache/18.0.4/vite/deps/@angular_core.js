@@ -15,6 +15,7 @@ import {
   CSP_NONCE,
   CUSTOM_ELEMENTS_SCHEMA,
   ChangeDetectionScheduler,
+  ChangeDetectionSchedulerImpl,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Compiler,
@@ -97,6 +98,7 @@ import {
   PACKAGE_ROOT_URL,
   PLATFORM_ID,
   PLATFORM_INITIALIZER,
+  PROVIDED_NG_ZONE,
   PendingTasks,
   Pipe,
   PlatformRef,
@@ -455,7 +457,7 @@ import {
   ɵɵvalidateIframeAttribute,
   ɵɵviewQuery,
   ɵɵviewQuerySignal
-} from "./chunk-UW4MIM2Y.js";
+} from "./chunk-57SFBYUE.js";
 export {
   ANIMATION_MODULE_TYPE,
   APP_BOOTSTRAP_LISTENER,
@@ -601,6 +603,7 @@ export {
   AfterRenderEventManager as ɵAfterRenderEventManager,
   CONTAINER_HEADER_OFFSET as ɵCONTAINER_HEADER_OFFSET,
   ChangeDetectionScheduler as ɵChangeDetectionScheduler,
+  ChangeDetectionSchedulerImpl as ɵChangeDetectionSchedulerImpl,
   ComponentFactory$1 as ɵComponentFactory,
   Console as ɵConsole,
   DEFAULT_LOCALE_ID as ɵDEFAULT_LOCALE_ID,
@@ -628,6 +631,7 @@ export {
   NO_CHANGE as ɵNO_CHANGE,
   NgModuleFactory as ɵNgModuleFactory,
   NoopNgZone as ɵNoopNgZone,
+  PROVIDED_NG_ZONE as ɵPROVIDED_NG_ZONE,
   PendingTasks as ɵPendingTasks,
   ReflectionCapabilities as ɵReflectionCapabilities,
   ComponentFactory as ɵRender3ComponentFactory,

@@ -58,7 +58,7 @@ import {
   ɵɵinject,
   ɵɵinjectAttribute,
   ɵɵstyleProp
-} from "./chunk-UW4MIM2Y.js";
+} from "./chunk-57SFBYUE.js";
 
 // node_modules/@angular/common/fesm2022/common.mjs
 var _DOM = null;
@@ -3705,7 +3705,7 @@ function isPlatformBrowser(platformId) {
 function isPlatformServer(platformId) {
   return platformId === PLATFORM_SERVER_ID;
 }
-var VERSION = new Version("18.0.0");
+var VERSION = new Version("18.0.3");
 var _ViewportScroller = class _ViewportScroller {
 };
 _ViewportScroller.ɵprov = ɵɵdefineInjectable({
@@ -5011,9 +5011,9 @@ export {
 
 @angular/common/fesm2022/common.mjs:
   (**
-   * @license Angular v18.0.0
+   * @license Angular v18.0.3
    * (c) 2010-2024 Google LLC. https://angular.io/
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-T3DRXX64.js.map
+//# sourceMappingURL=chunk-LIK5DR5J.js.map
