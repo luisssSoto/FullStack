@@ -9,7 +9,7 @@ import {RouterLink, RouterOutlet} from '@angular/router';
   imports: [CommonModule, RouterLink, RouterOutlet],
   template: `
     <section class="listing">
-      <img class="listing-photo" src= {{housingLocationy.photo}} alt="Exterior photo of {{housingLocationy.name}}">
+      <img class="listing-photo" src={{housingLocationy.photo}} alt="Exterior photo of {{housingLocationy.name}}">
       <h2 class="listing-heading">{{housingLocationy.name}}</h2>
       <p class="listing-location">{{housingLocationy.city}}, {{housingLocationy.state}}</p>
       <p class="listing-location">Wifi: {{housingLocationy.wifi}}</p>
