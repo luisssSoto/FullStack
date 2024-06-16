@@ -8,7 +8,7 @@ import {
   isPlatformServer,
   parseCookieValue,
   setRootDomAdapter
-} from "./chunk-T3DRXX64.js";
+} from "./chunk-LIK5DR5J.js";
 import {
   APP_BOOTSTRAP_LISTENER,
   APP_ID,
@@ -86,7 +86,7 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵinject
-} from "./chunk-UW4MIM2Y.js";
+} from "./chunk-57SFBYUE.js";
 
 // node_modules/@angular/common/fesm2022/http.mjs
 var HttpHandler = class {
@@ -4065,7 +4065,7 @@ function provideClientHydration(...features) {
   }
   return makeEnvironmentProviders([typeof ngDevMode !== "undefined" && ngDevMode ? provideZoneJsCompatibilityDetector() : [], withDomHydration(), featuresKind.has(HydrationFeatureKind.NoHttpTransferCache) || hasHttpTransferCacheOptions ? [] : withHttpTransferCache({}), providers]);
 }
-var VERSION = new Version("18.0.0");
+var VERSION = new Version("18.0.3");
 
 export {
   BrowserDomAdapter,
@@ -4109,16 +4109,16 @@ export {
 
 @angular/common/fesm2022/http.mjs:
   (**
-   * @license Angular v18.0.0
+   * @license Angular v18.0.3
    * (c) 2010-2024 Google LLC. https://angular.io/
    * License: MIT
    *)
 
 @angular/platform-browser/fesm2022/platform-browser.mjs:
   (**
-   * @license Angular v18.0.0
+   * @license Angular v18.0.3
    * (c) 2010-2024 Google LLC. https://angular.io/
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-VJY73RWR.js.map
+//# sourceMappingURL=chunk-UHBUL5DV.js.map
