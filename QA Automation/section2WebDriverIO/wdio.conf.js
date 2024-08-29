@@ -1,6 +1,10 @@
-import * as path from "path";
-const downloadPath = "./download";
+import * as path from 'path';
+
+const downloadPath = './downloads';
 global.downloadDir = path.resolve(downloadPath);
+
+const uploadPath = './uploads';
+global.uploadDir = path.resolve(uploadPath);
 
 export const config = {
     //
@@ -47,7 +51,6 @@ export const config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 10,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -56,10 +59,13 @@ export const config = {
     capabilities: [{
         maxInstances: 10,
         browserName: 'chrome',
-        "goog:chromeOptions": {
-            // args: ['headless', 'disable-gpu'],
+        'goog:chromeOptions' : {
             prefs: {
-                "download.default_directory": downloadDir
+                download: {
+                    'default_directory': downloadDir,
+                    'directory_upgrade': false,
+                    'promt_for_download': false
+                }
             }
         }
     }],
@@ -95,7 +101,7 @@ export const config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    // baseUrl: 'http://localhost:8080',
+    baseUrl: 'https://www.w3schools.com/html/html_iframe.asp',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -120,7 +126,7 @@ export const config = {
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
     framework: 'mocha',
-    
+
     //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,
@@ -134,7 +140,7 @@ export const config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec','junit','json'],
+    reporters: ['spec'],
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
