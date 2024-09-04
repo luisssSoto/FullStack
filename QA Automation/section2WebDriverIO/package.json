@@ -9,6 +9,8 @@
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js",
-    "test:link:text": "wdio --spec ./test/specs/link.text.js"
+    "test:link:text": "wdio --spec ./test/specs/link.text.js",
+    "test:get:attribute": "wdio --spec ./test/specs/get.attribute.js",
+    "test:get:text": "wdio --spec ./test/specs/get.text.js"
   }
 }
