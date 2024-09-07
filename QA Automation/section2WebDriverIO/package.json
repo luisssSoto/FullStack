@@ -11,6 +11,8 @@
     "wdio": "wdio run ./wdio.conf.js",
     "test:link:text": "wdio --spec ./test/specs/link.text.js",
     "test:get:attribute": "wdio --spec ./test/specs/get.attribute.js",
-    "test:get:text": "wdio --spec ./test/specs/get.text.js"
+    "test:get:text": "wdio --spec ./test/specs/get.text.js",
+    "test:get:value": "wdio --spec ./test/specs/get.value.js",
+    "test:set:value": "wdio --spec ./test/specs/set.value.js"
   }
 }
