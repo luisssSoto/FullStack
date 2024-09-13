@@ -16,6 +16,8 @@
     "test:set:value": "wdio --spec ./test/specs/set.value.js",
     "test:keys": "wdio --spec ./test/specs/keys.js",
     "test:wait:for:exist": "wdio --spec ./test/specs/wait.for.exist.js",
-    "test:is:existing": "wdio --spec ./test/specs/is.existing.js"
+    "test:is:existing": "wdio --spec ./test/specs/is.existing.js",
+    "test:is:displayed": "wdio --spec ./test/specs/is.displayed.js",
+    "test:wait:for:clickable": "wdio --spec ./test/specs/wait.for.clickable.js"
   }
 }
