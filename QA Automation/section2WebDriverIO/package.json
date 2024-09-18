@@ -18,6 +18,10 @@
     "test:wait:for:exist": "wdio --spec ./test/specs/wait.for.exist.js",
     "test:is:existing": "wdio --spec ./test/specs/is.existing.js",
     "test:is:displayed": "wdio --spec ./test/specs/is.displayed.js",
-    "test:wait:for:clickable": "wdio --spec ./test/specs/wait.for.clickable.js"
+    "test:wait:for:clickable": "wdio --spec ./test/specs/wait.for.clickable.js",
+    "test:http:authentication": "wdio --spec ./test/specs/http.authentication.js"
+  },
+  "dependencies": {
+    "driver": "^1.0.0"
   }
 }
