@@ -60,7 +60,7 @@ export const config = {
         maxInstances: 10,
         browserName: 'chrome',
         'goog:chromeOptions' : {
-            prefs: {
+            prefs: { 'intl.accept_languages': 'en,en_US',
                 download: {
                     'default_directory': downloadDir,
                     'directory_upgrade': false,
@@ -101,7 +101,7 @@ export const config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://github.com/',
+    baseUrl: 'https://www.wikipedia.org/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
