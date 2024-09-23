@@ -19,7 +19,8 @@
     "test:is:existing": "wdio --spec ./test/specs/is.existing.js",
     "test:is:displayed": "wdio --spec ./test/specs/is.displayed.js",
     "test:wait:for:clickable": "wdio --spec ./test/specs/wait.for.clickable.js",
-    "test:http:authentication": "wdio --spec ./test/specs/http.authentication.js"
+    "test:http:authentication": "wdio --spec ./test/specs/http.authentication.js",
+    "test:wikipedia": "wdio --spec ./test/specs/wikipedia.js"
   },
   "dependencies": {
     "driver": "^1.0.0"
