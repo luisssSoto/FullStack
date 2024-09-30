@@ -12,6 +12,7 @@ export const config = {
                 browserName: "chrome",
                 "goog:chromeOptions": {
                     prefs: {
+                        'intl.accept_languages': 'en,en_US',
                         "download.default_directory": downloadDir
                     }
                 },
