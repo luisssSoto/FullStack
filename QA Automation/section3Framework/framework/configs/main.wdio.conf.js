@@ -2,6 +2,9 @@ import path from 'node:path';
 import fs from 'fs-extra';
 
 export const downloadDir = path.resolve('./tmp');
+const jsonPath = path.resolve('./framework/configs/testData.json');
+const rawData = fs.readFileSync(jsonPath);
+export const data = JSON.parse(rawData);
 
 export const mainConfig = {
     runner: 'local',
@@ -10,6 +13,7 @@ export const mainConfig = {
     maxInstances: 1,
     logLevel: 'warn',
     bail: 0,
+    baseUrl: "https://the-internet.herokuapp.com/",
     waitforTimeout: 0,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
