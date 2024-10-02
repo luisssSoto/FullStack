@@ -25,5 +25,5 @@ describe('iFrame test', function() {
         await TinyEditorPage.undoChanges();
         await Browser.IFrame.switchToFrame(iFrame);
         assert.strictEqual(await TinyEditorPage.iFrame.getTextFromInputField(), `${defaultInputText}`, 'Wrong message into input field');
-    })
-})
+    });
+});
