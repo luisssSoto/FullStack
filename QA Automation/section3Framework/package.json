@@ -5,7 +5,10 @@
     "chrome.mocha": "wdio run ./configs/chrome.mocha.conf.js",
     "test:pastel:color": "wdio run ./configs/chrome.mocha.conf.js --spec ./test/specs/PastelColorTest.js",
     "test:steam": "wdio run ./configs/chrome.mocha.conf.js --spec ./test/specs/SteamTest.js",
-    "test:sortable:table": "wdio run ./configs/chrome.mocha.conf.js --spec ./test/specs/SortableTableTest.js"
+    "test:sortable:table": "wdio run ./configs/chrome.mocha.conf.js --spec ./test/specs/SortableTableTest.js",
+    "test:dynamic:controls": "wdio run ./configs/chrome.moc,ha.conf.js --spec ./test/specs/DynamicControlsTest.js",
+    "test:text:box": "wdio run ./configs/chrome.mocha.conf.js --spec ./test/specs/TextBoxTest.js --incognito",
+    "test:login": "wdio run ./configs/firefox.mocha.conf.js --spec ./test/specs/LoginTest.js"
   },
   "dependencies": {
     "@babel/core": "^7.24.3",
@@ -17,6 +20,8 @@
     "@wdio/mocha-framework": "^8.35.0",
     "@wdio/spec-reporter": "^8.32.4",
     "chai": "^5.1.0",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.5",
     "fs-extra": "^11.2.0",
     "winston": "^3.13.0"
   }

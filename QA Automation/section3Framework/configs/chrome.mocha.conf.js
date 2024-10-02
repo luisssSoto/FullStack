@@ -13,7 +13,8 @@ export const config = {
                 "goog:chromeOptions": {
                     prefs: {
                         'intl.accept_languages': 'en,en_US',
-                        "download.default_directory": downloadDir
+                        "download.default_directory": downloadDir,
+
                     }
                 },
             },

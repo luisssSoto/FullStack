@@ -2,7 +2,6 @@ import Browser from '../../framework/browser/Browser.js';
 import MainPage from '../pageObjects/MainPage.js';
 import DataTablesPage from '../pageObjects/DataTablesPage.js';
 import { assert } from 'chai';
-import Logger from '../../framework/utils/Logger.js';
 
 const expectedSum = 251;
 const currencySign = '$';

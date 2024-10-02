@@ -23,18 +23,3 @@ describe('Pastel Color Test', function() {
         assert.strictEqual(url, successfulURL, 'Wrong result of Verifying the URL');
     });
 });
-// describe('Alert Test', function () {
-//     it('Interaction with JavaScript Alert', async function () {
-//         await Browser.openUrl('https://the-internet.herokuapp.com/');
-        
-//         //Navigate to 'JavaScript Alerts'
-//         await MainPage.clickNavigationLink('JavaScript Alerts');
-
-//         await JavaScriptAlertsPage.clickForJSAlertButton();
-
-//         await JavaScriptAlertsPage.acceptJSAlert();
-        
-//         //Add assertion to check successfulMessage
-//         assert.strictEqual(await JavaScriptAlertsPage.getResultText(), successfulMessage, 'Wrong result of interaction with JSAlert');
-//     });
-// });
