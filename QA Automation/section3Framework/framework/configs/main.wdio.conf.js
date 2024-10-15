@@ -22,6 +22,7 @@ export const mainConfig = {
     userName: process.env.EMAIL,
     password: process.env.PASSWORD,
     secret: process.env.SECRET,
+    baseUrl: "https://demoqa.com/",
     waitforTimeout: 0,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
