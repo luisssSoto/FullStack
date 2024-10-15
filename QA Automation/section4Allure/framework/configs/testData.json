@@ -1,0 +1,19 @@
+{
+    "alertTest": {
+        "successfullMessage": "You successfully clicked an alert"
+    },
+    "dataTableTest": {
+        "expectedSum": 251,
+        "currencySign": "$"
+    },
+    "fileDownloadedTest": {
+        "fileName": "LambdaTest.txt"
+    },
+    "iFrameTest": {
+        "defaultInputText": "Your content goes here."
+    },
+    "uIVerifyText": {
+        "verifyTextPage": "Verify Text",
+        "expectedText": "Welcome UserName!"
+    }
+}
