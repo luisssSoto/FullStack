@@ -1,0 +1,1 @@
+[{"uid":"e22e7f8adb1f4e15","name":"The text should be equal","time":{"start":1729050104985,"stop":1729050107684,"duration":2699},"status":"passed","severity":"normal"},{"uid":"2d2cdf5ae1a9e4af","name":"Compare the cell table data is equal to the label","time":{"start":1729050174598,"stop":1729050179465,"duration":4867},"status":"passed","severity":"normal"}]
