@@ -5,9 +5,9 @@ import dotenv from 'dotenv';
 
 export const downloadDir = path.resolve('./tmp');
 
-const jsonPath = path.resolve('./framework/configs/textBoxData.json');
-const rawData = fs.readFileSync(jsonPath);
-export const data = JSON.parse(rawData);
+// const jsonPath = path.resolve('./framework/configs/textBoxData.json');
+// const rawData = fs.readFileSync(jsonPath);
+// export const data = JSON.parse(rawData);
 
 dotenv.config();
 
@@ -48,4 +48,4 @@ export const mainConfig = {
 
 }
 
-export const encryptedData = CryptoJS.AES.encrypt(JSON.stringify(data), mainConfig.secret).toString();
+//export const encryptedData = CryptoJS.AES.encrypt(JSON.stringify(data), mainConfig.secret).toString();
