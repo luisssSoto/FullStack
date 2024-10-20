@@ -1,0 +1,8 @@
+{
+    "cucumber.features": [
+        "QAAutomation/section5BDDCucumber/test/features/**/*.feature"
+    ],
+    "cucumber.glue": [
+        "QAAutomation/section5BDDCucumber/test/step-definitions/**/*.js"
+    ],
+}
