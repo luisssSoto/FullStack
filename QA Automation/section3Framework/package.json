@@ -9,7 +9,8 @@
     "test:dynamic:controls": "wdio run ./configs/chrome.moc,ha.conf.js --spec ./test/specs/DynamicControlsTest.js",
     "test:text:box": "wdio run ./configs/chrome.mocha.conf.js --spec ./test/specs/TextBoxTest.js --incognito",
     "test:login": "wdio run ./configs/firefox.mocha.conf.js --spec ./test/specs/LoginTest.js",
-    "test:check:box": "wdio run ./configs/chrome.mocha.conf.js --spec ./test/specs/CheckBoxTest.js"
+    "test:check:box": "wdio run ./configs/chrome.mocha.conf.js --spec ./test/specs/CheckBoxTest.js",
+    "test:ui": "wdio run ./configs/chrome.mocha.conf.js --spec ./test/specs/UITest.js"
   },
   "dependencies": {
     "@babel/core": "^7.24.3",

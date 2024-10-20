@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "allure-js-commons": "^3.0.4"
+  }
+}
