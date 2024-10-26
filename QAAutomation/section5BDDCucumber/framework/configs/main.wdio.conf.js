@@ -19,7 +19,7 @@ export const mainConfig = {
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
     framework: 'mocha',
-    baseUrl: "https://the-internet.herokuapp.com/",
+    baseUrl: "https://www.accuweather.com/",
     reporters: ['spec'],
     mochaOpts: {
         ui: 'bdd',
