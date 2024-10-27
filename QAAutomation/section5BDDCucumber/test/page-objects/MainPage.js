@@ -7,11 +7,11 @@ class MainPage extends BasePage {
         super(new Label(PreciseTextLocator('Welcome to the-internet'), 'Welcome Label'), 'Main Page');
 
         this.navigationLink = (text) => new Button(PreciseTextLocator(text), `Navigation link: ${text}`);
-    }
+    };
 
     async clickNavigationLink(navigationText) {
         await this.navigationLink(navigationText).click();
-    }
-}
+    };
+};
 
 export default new MainPage();
