@@ -3,7 +3,8 @@
   "type": "module",
   "scripts": {
     "chrome.cucumber": "wdio run ./configs/chrome.cucumber.conf.js",
-    "test:accuweather": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/accuweather.feature"
+    "test:accuweather": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/accuweather.feature",
+    "test:dynamic:controls": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/dynamicControls.feature"
   },
   "dependencies": {
     "@babel/core": "^7.24.3",
