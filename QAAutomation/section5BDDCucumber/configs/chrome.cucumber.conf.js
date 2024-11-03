@@ -15,7 +15,8 @@ export const config = {
     ],
         framework: 'cucumber',
         cucumberOpts: {
-            require: ['./test/step-definitions/**/*.js']
+            require: ['./test/step-definitions/**/*.js'],
+            // tags: '@gabriel'
         },
         specs: [
             '../test/features/**/*.feature'

@@ -19,8 +19,11 @@ export const mainConfig = {
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
     framework: 'mocha',
-    // baseUrl: "https://www.accuweather.com/",}
-    baseUrl: "https://the-internet.herokuapp.com/",
+    // baseUrl: "http://www.uitestingplayground.com/",
+    // baseUrl: "https://the-internet.herokuapp.com/",
+    // baseUrl: "https://www.accuweather.com/",
+    // baseUrl: "https://www.wikipedia.org/",
+    baseUrl: "https://store.steampowered.com/",
     reporters: ['spec'],
     mochaOpts: {
         ui: 'bdd',

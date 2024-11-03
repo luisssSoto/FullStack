@@ -7,22 +7,22 @@ class AccuWeatherMainPage extends BasePage {
         this.bannerButton = new Button('//div[text()="I Understand"]', "Banner Button");
         this.searchResults = new Button('//*[@class="results-container"]', "Search Results List");
         this.inputField = new Input('//input[@class="search-input"]', "Input Field");
-        this.firstCity = new Label('(//p[contains(@class,"search")])[1]', "First City");
-        this.recentLocation = new Button('(//a[contains(@class,"recent")])[1]', "Recent Location City");
+        this.firstCity = new Label('div[class="results-container"] div:first-of-type', "First City");
+        this.recentLocation = new Button('div[class="featured-locations__locations"] a:first-child', "Recent Location City");
         this.currentLocation = new Button('//span[@class="current-location-text"]', "Your Curren Location Link");
-
     };
     async isBannerDisplayed(){
-        return this.bannerButton.state().waitForDisplayed();
+        return this.bannerButton.state().isDisplayed();
     };
     async clickOnInputField(){
         await this.inputField.click();
     };
-    async setInputField(city){
+    async setInputFieldToAnyCity(city){
         await this.inputField.typeText(city); 
     };
     async isSearchResultsDisplayed(){
-        return this.searchResults.state().waitForDisplayed();
+        await this.searchResults.state().waitForDisplayed();
+        return this.searchResults.state().isDisplayed();
     };
     async clickOnFirstOption(){
         await this.firstCity.click();
@@ -31,8 +31,7 @@ class AccuWeatherMainPage extends BasePage {
         await this.recentLocation.click();
     };
     async isCurrentLocationDisplayed(){
-        return this.currentLocation.state().waitForDisplayed();
+        return this.currentLocation.state().isDisplayed();
     };
 };
-
 export default new AccuWeatherMainPage();
