@@ -3,8 +3,10 @@
   "type": "module",
   "scripts": {
     "chrome.cucumber": "wdio run ./configs/chrome.cucumber.conf.js",
+    "test:the:internet": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/theInternet.feature",
     "test:accuweather": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/accuweather.feature",
-    "test:dynamic:controls": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/dynamicControls.feature"
+    "test:wikipedia": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/wikipedia.feature",
+    "test:steam": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/steam.feature"
   },
   "dependencies": {
     "@babel/core": "^7.24.3",

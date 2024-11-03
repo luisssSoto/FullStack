@@ -22,7 +22,7 @@ Feature: Test Case AccuWeather
         Then The City weather page header contains 'London' from the search
 
     Scenario: The user can type their own location
-        And The user click on input field
+        When The user click on input field
         Then Your current location from user is displayed
 
-
+# baseUrl: "https://www.accuweather.com/"
