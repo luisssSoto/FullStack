@@ -27,7 +27,7 @@ Feature: Testing basic functionalities
         Then The Alert should be dissapear
         And The locator should contain 'btn-primary'
     
-    @hidden
+    #@hidden
     Scenario: Check if element it is hidden only one time
         When The user clicks on 'Hidden Layers'
         Then Hidden Layers web page should be opened
@@ -37,3 +37,8 @@ Feature: Testing basic functionalities
         When The user clicks on z-index blue button
         Then There are only 2 div children
 
+    @loadDelays
+    Scenario: Wait until Load Delays Page is Loaded
+        When The user clicks on 'Load Delay'
+        Then Load Delays should be opened after unpredictable time
+        And The blue button should be displayed
