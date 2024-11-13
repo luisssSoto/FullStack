@@ -37,8 +37,15 @@ Feature: Testing basic functionalities
         When The user clicks on z-index blue button
         Then There are only 2 div children
 
-    @loadDelays
+    #@loadDelays
     Scenario: Wait until Load Delays Page is Loaded
         When The user clicks on 'Load Delay'
         Then Load Delays should be opened after unpredictable time
         And The blue button should be displayed
+    @ajax
+    Scenario: Waiting until element appears using AJAX request
+        When The user clicks on 'AJAX Data'
+        Then The web page AJAX Data should be open
+        When The user clicks on Button Triggering AJAX Request
+        Then A label should appear
+        And The text of the label should be: 'Data loaded with AJAX get request.'

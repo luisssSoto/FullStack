@@ -7,7 +7,8 @@
     "test:accuweather": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/accuweather.feature",
     "test:wikipedia": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/wikipedia.feature",
     "test:steam": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/steam.feature",
-    "test:ui:automation:playground": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/uiTestAutomationPlayground.feature"
+    "test:ui:automation:playground": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/uiTestAutomationPlayground.feature",
+    "test:unit5:survey": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/unit5SurveyUI.feature"
   },
   "dependencies": {
     "@babel/core": "^7.24.3",

@@ -18,7 +18,8 @@ export const config = {
             require: ['./test/step-definitions/**/*.js'],
             // tags: '@gabriel'
             // tags: '@hidden'
-            tags: '@loadDelays'
+            // tags: '@loadDelays'
+            // tags: '@ajax'
         },
         specs: [
             '../test/features/**/*.feature'
