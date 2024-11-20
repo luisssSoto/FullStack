@@ -4,7 +4,7 @@ import fs from 'fs-extra';
 export const downloadDir = path.resolve('./tmp');
 
 //Test Data
-const jsonPath = path.resolve('./framework/configs/testData.json');
+const jsonPath = path.resolve('./framework/configs/data.json');
 const rawData = fs.readFileSync(jsonPath);
 export const data = JSON.parse(rawData);
 
@@ -19,7 +19,8 @@ export const mainConfig = {
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
     framework: 'mocha',
-    baseUrl: "http://www.uitestingplayground.com/",
+    // baseUrl: "http://www.uitestingplayground.com/",
+    baseUrl: "https://the-internet.herokuapp.com/",
     reporters: ['spec'],
     mochaOpts: {
         ui: 'bdd',
