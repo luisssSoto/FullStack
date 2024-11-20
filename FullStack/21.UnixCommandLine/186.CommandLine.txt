@@ -1,0 +1,9 @@
+Kernel: It's which controls hardware (CPU, Disks, Memory) (System Operative)
+Shell: It's which humans can control the Kernel(System Operative)
+
+Shell can divide in two parts:
+1. GUI Graphical User Interface
+2. CLI Command Line Interface
+
+Bash is for Bourne Again SHell which is a CLI for 
+UNIX 

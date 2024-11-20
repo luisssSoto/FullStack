@@ -1,6 +1,6 @@
 node_modules
+allure-results
+allure-report
 QAAutomation/section3Framework/framework/configs/textBoxData.json
 QAAutomation/section3Framework/.env
-QAAutomation/section4AllureReport/node_modules/
-QAAutomation/section5BDDCucumber/allure-results/
-QAAutomation/section5BDDCucumber/allure-report/
+QAAutomation/section4Allure/framework/configs/data.json

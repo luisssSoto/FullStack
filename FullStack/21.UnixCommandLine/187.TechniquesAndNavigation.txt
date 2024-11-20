@@ -1,0 +1,21 @@
+list -> ls
+list all the files inside any folder
+
+change directory -> cd
+change from one directory to the other one
+
+cd nameFolder
+cd ./ current folder
+cd .. parent folder
+cd ~ Users folder
+
+Techniques on command line
+CTRL + A -> begin the command
+CTRL + U -> delete the command before execute (include history)
+ALT + mouser -> any position of the command
+UP arrow -> last command
+DOWN arrow -> next command
+<- or -> move through the command
+
+
+clear -> clean the bash
