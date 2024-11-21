@@ -1,0 +1,10 @@
+Programming Languages and Frameworks
+
+Java -> Spring Boot
+Ruby -> Ruby on Rails
+PHP -> Larabel
+C# -> Net.Asp
+Python -> Flask or Django
+JavaScript -> Node JS
+
+We are going to work with Node JS
