@@ -1,0 +1,17 @@
+Introduction
+Full-Stack = Front-end + Back-end
+
+Front-end:
+1.Html
+2.Css
+3.JavaScript
+4.Frameworks (Reack, Angular, Vue)
+
+Backend contains three parts:
+1.Server: Computer 
+2.Application: Logic that runs in the Computer (Responds to Requests)
+3.Database: Store Data (Persist the information)
+
+Web App
+Front-end (email, password) -> Request to the Server -> Application (login.js) -> Database (check email and password) ->
+			    <- Response		     <-			       <-
