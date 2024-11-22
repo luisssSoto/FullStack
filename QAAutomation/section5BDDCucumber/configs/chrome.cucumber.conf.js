@@ -11,6 +11,7 @@ export const config = {
             // tags: '@hidden'
             // tags: '@loadDelays'
             // tags: '@ajax'
+            tags: '@forms'
         },
         specs: [
             '../test/features/**/*.feature'

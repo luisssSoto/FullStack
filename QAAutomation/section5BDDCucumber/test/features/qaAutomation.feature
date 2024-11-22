@@ -14,3 +14,18 @@ Feature: Working with Frames
         Then The text 'Parent frame' is in the parent Frame
         When The user switch to Child Frame
         Then The text 'Child Iframe' is in the child Frame
+
+    @forms
+    Scenario: Checking the forms
+        Given The user is on QA Automation Home page
+        Then QA Automation Home page is displayed
+        When The user clicks on Forms link
+        Then Practice Form is displayed
+        When The user clicks on Practice Form Button
+        Then A form is displayed
+        When The user fills out the first name
+        *   the last name
+        * the checkbox male
+        And the phone number field
+        Then A Success modal is displayed
+        
