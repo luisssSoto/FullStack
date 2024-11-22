@@ -1,0 +1,44 @@
+Testing	
+The process consisting of all lifecycle activities, both static and dynamic, 
+concerned with planning, preparation and evaluation of software products and 
+related work products to determine that they satisfy specified requirements, 
+to demonstrate that they are fit for purpose and to detect defects.
+
+Defect (bug)	
+A flaw in a component or system that can cause the component or system to fail 
+to perform its required function, e.g. an incorrect statement or data definition. 
+A defect, if encountered during execution, may cause a failure of the component 
+or system.  
+
+Requirement	
+A condition or capability needed by a user to solve a problem or achieve an objective
+that must be met or possessed by a system or system component to satisfy a contract, 
+standard, specification, or other formally imposed document. [After IEEE 610]
+
+Priority	
+The level of (business) importance assigned to an item, e.g., defect.
+
+Test Environment (Test Bed)	
+An environment containing hardware, instrumentation, simulators, software tools, 
+and other support elements needed to conduct a test. [IEEE 610]
+
+Ticket (Incident, Issue, Work item)	An item of any type (defect, task etc.) reported
+to defect-/task-tracking system.
+
+Test case	
+A test case is a set of actions performed on a system to determine if it satisfies 
+software requirements and functions correctly.
+A test case document includes test steps, test data, preconditions and the expected 
+result that verify requirements.
+
+Precondition	
+Is a list of necessary preparatory actions (application settings, testing environment
+settings) for execution on the current test case.
+
+Validation	
+Confirmation by examination and through provision of objective evidence that the 
+requirements for a specific intended use or application have been fulfilled. [ISO 9000]
+
+Build	
+A development activity where a complete system is compiled and linked, so that a 
+consistent system is available at any time including all latest changes.

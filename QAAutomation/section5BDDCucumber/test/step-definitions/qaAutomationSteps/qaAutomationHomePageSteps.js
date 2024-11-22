@@ -11,3 +11,7 @@ When('The user clicks on Alerts, Frame & Windows link', async() => {
     AllureReporter.addStep('Click on Alerts, Frame & Windows link');
     await QAAutomationHomePage.clickOnAlertsButton();
 });
+When('The user clicks on Forms link', async() => {
+    AllureReporter.addStep('Click on Forms Link');
+    await QAAutomationHomePage.clickOnFormsButton();
+});

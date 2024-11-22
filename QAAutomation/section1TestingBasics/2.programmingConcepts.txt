@@ -1,0 +1,23 @@
+Instance
+A class instance is an object-oriented programming (OOP) object created from a class. 
+Each instance of a class shares a data layout but has its own memory allocation.	
+
+Parameter and Argument
+A parameter is a special kind of variable used in a function to refer to one of the 
+pieces of data provided as input to the function. These pieces of data are the values 
+of the arguments with which the function is going to be called/invoked.
+
+Object
+In object-oriented programming (OOP), objects are the basic entities that actually 
+exists in the memory. Each object is based on a blueprint of attributes and behaviours
+(variables and functions) defined as Class.	
+
+Field
+Fields, also known as attributes or variables, are used to store data within an 
+object or class. They represent the characteristics or properties associated with 
+an object.
+
+Constructor
+constructor is a special type of function called to create an object. It prepares 
+the new object for use, often accepting arguments that the constructor uses to set 
+required member variables.
