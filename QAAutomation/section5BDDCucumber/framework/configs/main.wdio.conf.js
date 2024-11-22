@@ -25,7 +25,14 @@ export const mainConfig = {
     // baseUrl: "https://www.wikipedia.org/",
     // baseUrl: "https://store.steampowered.com/",
     baseUrl: "https://demoqa.com/",
-    reporters: ['spec'],
+    reporters: ['spec',  
+    ['allure',
+    {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: true,
+    },
+]],
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000

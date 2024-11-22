@@ -1,0 +1,20 @@
+Node.js
+
+Why use Frameworks?
+1.Reuse components
+2.Reduce overhead
+
+Node.js it is not a Framework it is:
+An asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications
+
+JavaScript runtime: You can type JS code not only in the browser, also you can use it an any application; Desktop or Service side
+thanks that Node use a V8 engine which was written in C++ and C
+
+Asynchronous event-driven: Can handle events
+in an asynchronous approach without affect the main thread of the program
+
+Benefits:
+1.JS FullStack
+2.Scales
+3.Non-blocker
+4.Huge Ecosystem (npm)
