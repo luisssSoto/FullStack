@@ -8,8 +8,9 @@ class QAAutomationFormsPage extends BasePage{
         this.studentForm = new Label('//h5[contains(text(),"Student")]', 'Student Form');
         this.firstNameInput = new Input('//input[@id="firstName"]', 'First Name Input');
         this.lastNameInput = new Input('//input[@id="lastName"]', 'Last Name Input');
-        this.maleCheckbox = new Checkbox('//input[@id="gender-radio-1"]', 'Male Input');
+        this.maleRadioInput  = new Label('//label[@for="gender-radio-1"]', 'Male Radio Input',);
         this.mobilePhoneInput = new Input('//input[@id="userNumber"]', 'Mobile Phone Input');
+        this.submitButton = new Button('button#submit', 'Submit Button');
         this.successfulModal = new Label('//div[@id="example-modal-sizes-title-lg"]', 'Successfull Modal Message');
     };
     async clickOnPracticeFormButton(){
@@ -24,13 +25,17 @@ class QAAutomationFormsPage extends BasePage{
     async fillOutLastNameInput(userLastName){
         await this.lastNameInput.typeText(userLastName);
     };
-    async checkMaleInput(){
-        await this.maleCheckbox.check();
+    async clickOnMaleRadioInput(){
+        await this.maleRadioInput.click();
     };
     async fillOutMobilePhoneInput(userMobilePhone){
         await this.mobilePhoneInput.typeText(userMobilePhone);
     };
+    async clickOnSubmitButton(){
+        await this.submitButton.click();
+    };
     async isModalDisplayed(){
+        await this.successfulModal.state().waitForDisplayed();
         return this.successfulModal.state().isDisplayed();
     };
 };

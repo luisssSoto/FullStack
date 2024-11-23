@@ -23,13 +23,17 @@ When('the last name', async() => {
     AllureReporter.addStep('Fill out the last name field');
     await QAAutomationFormsPage.fillOutLastNameInput(process.env.userLastName);
 });
-When('the checkbox male', async() => {
+When('the radio input male', async() => {
     AllureReporter.addStep('Check the male checkbox');
-    await QAAutomationFormsPage.checkMaleInput();
+    await QAAutomationFormsPage.clickOnMaleRadioInput();
 });
 When('the phone number field', async() => {
     AllureReporter.addStep('Fill out the mobile phone field');
     await QAAutomationFormsPage.fillOutMobilePhoneInput(process.env.userMobilePhone);
+});
+When('clicks on submit button', async() => {
+    AllureReporter.addStep('Click on Submit button');
+    await QAAutomationFormsPage.clickOnSubmitButton();
 });
 Then('A Success modal is displayed', async() => {
     AllureReporter.addStep('Check if the success modal is displayed');
