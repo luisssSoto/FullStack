@@ -24,8 +24,9 @@ Feature: Working with Frames
         When The user clicks on Practice Form Button
         Then A form is displayed
         When The user fills out the first name
-        *   the last name
-        * the checkbox male
-        And the phone number field
+        * the last name
+        * the radio input male
+        * the phone number field
+        And clicks on submit button
         Then A Success modal is displayed
         
