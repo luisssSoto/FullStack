@@ -1,5 +1,9 @@
 import BasePage from "../../../framework/page/BasePage.js";
-import { Button, Checkbox, Input, Label } from "../../../framework/elements/index.js";
+import { Button, Input, Label } from "../../../framework/elements/index.js";
+import Browser from "../../../framework/browser/Browser.js";
+import Logger from "../../../framework/utils/Logger.js";
+import fs from 'fs';
+import path from 'path';
 
 class QAAutomationFormsPage extends BasePage{
     constructor(){
@@ -37,6 +41,21 @@ class QAAutomationFormsPage extends BasePage{
     async isModalDisplayed(){
         await this.successfulModal.state().waitForDisplayed();
         return this.successfulModal.state().isDisplayed();
+    };
+    async takingScreenshot(){
+        const base64String = await Browser.addScreenshot();
+        const base64Data = base64String.replace(/^data:image\/\w+;base64,/, "");
+        // Convertir a un buffer binario
+        const buffer = Buffer.from(base64Data, 'base64');
+
+        // Guardar el buffer como un archivo de imagen
+        fs.writeFileSync('./tmp/imagen.png', buffer, (err) => {
+            if (err) {
+                console.error("Error al guardar la imagen:", err);
+            } else {
+                console.log("Imagen guardada exitosamente.");
+            }
+        });
     };
 };
 export default new QAAutomationFormsPage();
