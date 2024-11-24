@@ -21,7 +21,7 @@ export const config = {
                 browserName: "chrome",
                 "goog:chromeOptions": {
                     args: [
-                        '--headless'
+                        
                     ],
                     prefs: {
                         'intl.accept_languages': 'en,en_US', 

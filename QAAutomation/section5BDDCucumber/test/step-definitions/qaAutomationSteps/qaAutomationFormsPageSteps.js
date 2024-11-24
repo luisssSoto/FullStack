@@ -44,5 +44,5 @@ Then('A screenshot of the modal is taken', async() => {
     AllureReporter.addStep('Taking screenshot');
     await QAAutomationFormsPage.takingScreenshot();
     AllureReporter.addStep('Saving Screenshot');
-    AllureReporter.addAttachment("Screenshot", fs.readFileSync('./tmp/imagen.png'), 'image/png');
+    AllureReporter.addAttachment("Screenshot", fs.readFileSync('./test/step-definitions/qaAutomationSteps/modal.png'), 'image/png');
 });

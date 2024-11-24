@@ -45,11 +45,11 @@ class QAAutomationFormsPage extends BasePage{
     async takingScreenshot(){
         const base64String = await Browser.addScreenshot();
         const base64Data = base64String.replace(/^data:image\/\w+;base64,/, "");
-        // Convertir a un buffer binario
+        
         const buffer = Buffer.from(base64Data, 'base64');
 
         // Guardar el buffer como un archivo de imagen
-        fs.writeFileSync('./tmp/imagen.png', buffer, (err) => {
+        fs.writeFileSync('./test/step-definitions/qaAutomationSteps/modal.png', buffer, (err) => {
             if (err) {
                 console.error("Error al guardar la imagen:", err);
             } else {
