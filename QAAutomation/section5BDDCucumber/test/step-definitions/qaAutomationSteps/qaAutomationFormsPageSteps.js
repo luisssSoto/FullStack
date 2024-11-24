@@ -2,6 +2,7 @@ import { When, Then } from "@wdio/cucumber-framework";
 import AllureReporter from "@wdio/allure-reporter";
 import { assert } from "chai";
 import QAAutomationFormsPage from "../../page-objects/QAAutomationPages/QAAutomationFormsPage.js";
+import fs from 'fs';
 
 Then('Practice Form is displayed', async() => {
     AllureReporter.addStep('Check if the Form Page is displayed');
@@ -38,4 +39,10 @@ When('clicks on submit button', async() => {
 Then('A Success modal is displayed', async() => {
     AllureReporter.addStep('Check if the success modal is displayed');
     assert.isTrue(await QAAutomationFormsPage.isModalDisplayed(), 'The Success modal was not displayed');
+});
+Then('A screenshot of the modal is taken', async() => {
+    AllureReporter.addStep('Taking screenshot');
+    await QAAutomationFormsPage.takingScreenshot();
+    AllureReporter.addStep('Saving Screenshot');
+    AllureReporter.addAttachment("Screenshot", fs.readFileSync('./tmp/imagen.png'), 'image/png');
 });

@@ -92,7 +92,8 @@ class Browser {
       if (isWait) {
         await this.waitForDelay(timer);
       }
-      await this.#getBrowser().takeScreenshot();
+      const screenshot = await this.#getBrowser().takeScreenshot();
+      return screenshot;
     } catch (err) {
       Logger.error(err);
     }

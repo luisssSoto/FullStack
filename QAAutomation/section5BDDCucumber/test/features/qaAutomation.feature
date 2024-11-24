@@ -29,4 +29,5 @@ Feature: Working with Frames
         * the phone number field
         And clicks on submit button
         Then A Success modal is displayed
+        And A screenshot of the modal is taken
         
