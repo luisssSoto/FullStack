@@ -24,9 +24,9 @@ When('the last name', async() => {
     AllureReporter.addStep('Fill out the last name field');
     await QAAutomationFormsPage.fillOutLastNameInput(process.env.userLastName);
 });
-When('the radio input male', async() => {
-    AllureReporter.addStep('Check the male checkbox');
-    await QAAutomationFormsPage.clickOnMaleRadioInput();
+When('the radio input gender', async() => {
+    AllureReporter.addStep('Check the gender checkbox');
+    await QAAutomationFormsPage.clickOnGenderRadioInput(process.env.userNumberGender);
 });
 When('the phone number field', async() => {
     AllureReporter.addStep('Fill out the mobile phone field');

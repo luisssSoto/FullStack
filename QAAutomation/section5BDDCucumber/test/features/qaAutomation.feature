@@ -25,7 +25,7 @@ Feature: Working with Frames
         Then A form is displayed
         When The user fills out the first name
         * the last name
-        * the radio input male
+        * the radio input gender
         * the phone number field
         And clicks on submit button
         Then A Success modal is displayed
