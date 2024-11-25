@@ -1,9 +1,7 @@
 import BasePage from "../../../framework/page/BasePage.js";
 import { Button, Input, Label } from "../../../framework/elements/index.js";
 import Browser from "../../../framework/browser/Browser.js";
-import Logger from "../../../framework/utils/Logger.js";
 import fs from 'fs';
-import path from 'path';
 
 class QAAutomationFormsPage extends BasePage{
     constructor(){
@@ -13,6 +11,7 @@ class QAAutomationFormsPage extends BasePage{
         this.firstNameInput = new Input('//input[@id="firstName"]', 'First Name Input');
         this.lastNameInput = new Input('//input[@id="lastName"]', 'Last Name Input');
         this.maleRadioInput  = new Label('//label[@for="gender-radio-1"]', 'Male Radio Input',);
+        this.gender = (numberRadioInput) => new Input(`//label[@for="gender-radio-${numberRadioInput}"]`, `${numberRadioInput} Radio Input`);
         this.mobilePhoneInput = new Input('//input[@id="userNumber"]', 'Mobile Phone Input');
         this.submitButton = new Button('button#submit', 'Submit Button');
         this.successfulModal = new Label('//div[@id="example-modal-sizes-title-lg"]', 'Successfull Modal Message');
@@ -29,8 +28,8 @@ class QAAutomationFormsPage extends BasePage{
     async fillOutLastNameInput(userLastName){
         await this.lastNameInput.typeText(userLastName);
     };
-    async clickOnMaleRadioInput(){
-        await this.maleRadioInput.click();
+    async clickOnGenderRadioInput(numberOfRadio){
+        await this.gender(numberOfRadio).click();
     };
     async fillOutMobilePhoneInput(userMobilePhone){
         await this.mobilePhoneInput.typeText(userMobilePhone);
