@@ -32,6 +32,11 @@ When('the phone number field', async() => {
     AllureReporter.addStep('Fill out the mobile phone field');
     await QAAutomationFormsPage.fillOutMobilePhoneInput(process.env.userMobilePhone);
 });
+When('the hobbies', async() => {
+    AllureReporter.addStep('Check the hobbies');
+    // await QAAutomationFormsPage.checkOnHobbyCheckboxInput(process.env.userNumberHobby);
+    await QAAutomationFormsPage.checkOnHobby(process.env.userNumberHobby);
+});
 When('clicks on submit button', async() => {
     AllureReporter.addStep('Click on Submit button');
     await QAAutomationFormsPage.clickOnSubmitButton();

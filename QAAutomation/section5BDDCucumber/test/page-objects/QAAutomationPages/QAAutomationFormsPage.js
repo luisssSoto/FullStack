@@ -1,5 +1,5 @@
 import BasePage from "../../../framework/page/BasePage.js";
-import { Button, Input, Label } from "../../../framework/elements/index.js";
+import { Button, Checkbox, Input, Label } from "../../../framework/elements/index.js";
 import Browser from "../../../framework/browser/Browser.js";
 import fs from 'fs';
 
@@ -13,6 +13,8 @@ class QAAutomationFormsPage extends BasePage{
         this.maleRadioInput  = new Label('//label[@for="gender-radio-1"]', 'Male Radio Input',);
         this.gender = (numberRadioInput) => new Input(`//label[@for="gender-radio-${numberRadioInput}"]`, `${numberRadioInput} Radio Input`);
         this.mobilePhoneInput = new Input('//input[@id="userNumber"]', 'Mobile Phone Input');
+        this.hobby = (numberCheckboxInput) => new Input(`label[for="hobbies-checkbox-${numberCheckboxInput}"]`, `${numberCheckboxInput} Checkbox Input`);
+        this.sportsHobby = new Checkbox('div#hobbiesWrapper > div:last-child >div:first-child', 'Checkbox Container');
         this.submitButton = new Button('button#submit', 'Submit Button');
         this.successfulModal = new Label('//div[@id="example-modal-sizes-title-lg"]', 'Successfull Modal Message');
     };
@@ -34,6 +36,12 @@ class QAAutomationFormsPage extends BasePage{
     async fillOutMobilePhoneInput(userMobilePhone){
         await this.mobilePhoneInput.typeText(userMobilePhone);
     };
+    // async checkOnHobbyCheckboxInput(numberOfCheckbox){
+    //     await this.hobby(numberOfCheckbox).check({ internalCheckbox: true});
+    // };
+    async checkOnHobby(numberOfCheckbox){
+        await this.hobby(numberOfCheckbox).click();
+    };
     async clickOnSubmitButton(){
         await this.submitButton.click();
     };
@@ -42,7 +50,7 @@ class QAAutomationFormsPage extends BasePage{
         return this.successfulModal.state().isDisplayed();
     };
     async takingScreenshot(){
-        const base64String = await Browser.addScreenshot();
+        const base64String = await Browser.addScreenshot('modal');
         const base64Data = base64String.replace(/^data:image\/\w+;base64,/, "");
         
         const buffer = Buffer.from(base64Data, 'base64');
