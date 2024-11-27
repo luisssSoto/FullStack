@@ -11,7 +11,7 @@ export const config = {
             // tags: '@hidden'
             // tags: '@loadDelays'
             // tags: '@ajax'
-            tags: '@forms'
+            // tags: '@forms'
         },
         specs: [
             '../test/features/**/*.feature'
@@ -21,7 +21,7 @@ export const config = {
                 browserName: "chrome",
                 "goog:chromeOptions": {
                     args: [
-                        
+                        "--headless"
                     ],
                     prefs: {
                         'intl.accept_languages': 'en,en_US', 

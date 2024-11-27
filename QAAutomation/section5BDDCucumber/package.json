@@ -9,7 +9,9 @@
     "test:steam": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/steam.feature",
     "test:ui:automation:playground": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/uiTestAutomationPlayground.feature",
     "test:unit5:survey": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/unit5SurveyUI.feature",
-    "test:qaAutomation:frames": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/qaAutomation.feature"
+    "test:qaAutomation:frames": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/qaAutomation.feature",
+    "test:scrollbars": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/scroll.feature",
+    "test:final:section456": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/testFinal456.feature"
   },
   "dependencies": {
     "@babel/core": "^7.24.3",

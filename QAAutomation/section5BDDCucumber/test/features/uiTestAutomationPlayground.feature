@@ -42,6 +42,7 @@ Feature: Testing basic functionalities
         When The user clicks on 'Load Delay'
         Then Load Delays should be opened after unpredictable time
         And The blue button should be displayed
+        
     @ajax
     Scenario: Waiting until element appears using AJAX request
         When The user clicks on 'AJAX Data'

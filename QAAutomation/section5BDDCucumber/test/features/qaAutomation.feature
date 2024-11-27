@@ -27,6 +27,7 @@ Feature: Working with Frames
         * the last name
         * the radio input gender
         * the phone number field
+        * the hobbies
         And clicks on submit button
         Then A Success modal is displayed
         And A screenshot of the modal is taken
