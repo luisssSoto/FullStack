@@ -18,24 +18,24 @@ Then('A form is displayed', async() => {
 });
 When('The user fills out the first name', async() => {
     AllureReporter.addStep('Fill out the first name field');
-    await QAAutomationFormsPage.fillOutFirstNameInput(process.env.userFirstName);
+    await QAAutomationFormsPage.fillOutFirstNameInput(process.env.USER_FIRST_NAME);
 });
 When('the last name', async() => {
     AllureReporter.addStep('Fill out the last name field');
-    await QAAutomationFormsPage.fillOutLastNameInput(process.env.userLastName);
+    await QAAutomationFormsPage.fillOutLastNameInput(process.env.USER_LAST_NAME);
 });
 When('the radio input gender', async() => {
     AllureReporter.addStep('Check the gender checkbox');
-    await QAAutomationFormsPage.clickOnGenderRadioInput(process.env.userNumberGender);
+    await QAAutomationFormsPage.clickOnGenderRadioInput(process.env.USER_NUMBER_GENDER);
 });
 When('the phone number field', async() => {
     AllureReporter.addStep('Fill out the mobile phone field');
-    await QAAutomationFormsPage.fillOutMobilePhoneInput(process.env.userMobilePhone);
+    await QAAutomationFormsPage.fillOutMobilePhoneInput(process.env.USER_MOBILE_PHONE);
 });
 When('the hobbies', async() => {
     AllureReporter.addStep('Check the hobbies');
     // await QAAutomationFormsPage.checkOnHobbyCheckboxInput(process.env.userNumberHobby);
-    await QAAutomationFormsPage.checkOnHobby(process.env.userNumberHobby);
+    await QAAutomationFormsPage.checkOnHobby(process.env.USER_NUMBER_HOBBY);
 });
 When('clicks on submit button', async() => {
     AllureReporter.addStep('Click on Submit button');
