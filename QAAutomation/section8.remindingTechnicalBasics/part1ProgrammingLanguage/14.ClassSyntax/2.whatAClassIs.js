@@ -16,7 +16,7 @@ console.log(typeof Developer);
 //More precisely the constructor is a function
 console.log(Developer === Developer.prototype.constructor);
 
-//Methods are in protorype
+//Methods are in prototype
 console.log(Developer.prototype.programming);
 
 //Getting all the methods from prototype

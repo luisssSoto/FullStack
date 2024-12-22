@@ -24,9 +24,13 @@ const n1 = null ?? 1; // 1
 const n2 = undefined ?? 2; // 2
 const n3 = false ?? 3; // false
 const n4 = 0 ?? 4; // 0
-//When the first operand is null, undefined or null always returns the second operand
+console.log(null ?? 'default');
+console.log('default' ?? undefined);
+//When the first or second operand is null or undefined always 
+// returns the other operand
 
 //!
 const n5 = !true; // !t returns false
 const n6 = !false; // !f returns true
 const n7 = !"Cat"; // !t returns false
+

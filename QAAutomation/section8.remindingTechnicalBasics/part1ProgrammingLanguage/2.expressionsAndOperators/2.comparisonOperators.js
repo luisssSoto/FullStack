@@ -6,7 +6,7 @@ console.log(3 == '3');
 //Not Equal !== 
 console.log(3 !== '3');
 
-//Strict Equal === don't cast the operands before neither after
+//Strict Equal === doesn't cast the operands before, neither after
 console.log(3 === '3');
 
 //Strict Not Equal !==

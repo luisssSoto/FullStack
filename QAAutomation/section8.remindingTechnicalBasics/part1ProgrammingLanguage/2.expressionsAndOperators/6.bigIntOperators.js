@@ -12,6 +12,7 @@ try {
     console.log(2n + 2);
 } catch (error) {
     console.log(error);
+    console.log(error.name);
 };
 
 //but you can compare them
