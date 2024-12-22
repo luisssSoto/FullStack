@@ -1,6 +1,6 @@
 "use strict";
 //Relational Operators
-//in
+//in look up the property in the object not the value
 
 let characters = ['!', '#', '?'];
 console.log('!' in characters);
