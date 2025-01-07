@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "allure-commandline": "^2.30.0"
+    "allure-commandline": "^2.30.0",
+    "mocha": "^11.0.1"
   }
 }
