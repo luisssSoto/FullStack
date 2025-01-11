@@ -1,0 +1,10 @@
+{
+    "user1": {
+        "fullName": "John Doe",
+        "email": "johnDoe@a1qa.com"
+    },
+    "user2": {
+        "fullName": "Jane Doe",
+        "email": "janeDoe@a1qa.com"
+    }
+}

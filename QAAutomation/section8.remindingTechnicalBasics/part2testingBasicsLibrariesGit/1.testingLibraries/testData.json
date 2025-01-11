@@ -1,0 +1,17 @@
+{
+    "operation1": {
+        "operand1": 3, 
+        "operand2": 4,
+        "result": 7
+    },
+    "operation2": {
+        "operand1": 8, 
+        "operand2": 4,
+        "result": 12
+    },
+    "operation3": {
+        "operand1": 3,
+        "operand2": 5,
+        "result": 8
+    }
+}

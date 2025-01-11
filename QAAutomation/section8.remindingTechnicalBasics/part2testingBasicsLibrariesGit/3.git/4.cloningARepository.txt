@@ -1,0 +1,25 @@
+Clonning a repository
+
+Initializing a Repository in an Existing Directory
+
+1.for Windows:
+$ cd C:/Users/user/my_project
+
+2.and type:
+$ git init
+
+3.
+$ git add LICENSE
+$ git commit -m 'Initial project version'
+
+Cloning an Existing Repository
+1. $ git clone https://github.com/libgit2/libgit2
+
+or
+
+If you want to clone the repository into a directory named something other than 
+libgit2, you can specify the new directory name as an additional argument:
+
+1.$ git clone https://github.com/libgit2/libgit2 mylibgit
+That command does the same thing as the previous one, but the target directory is 
+called mylibgit.
