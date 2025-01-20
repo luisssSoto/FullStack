@@ -4,3 +4,21 @@ allure-report
 QAAutomation/section3Framework/framework/configs/textBoxData.json
 QAAutomation/section3Framework/.env
 QAAutomation/section4Allure/framework/configs/data.json
+
+#Ignoring files by name
+# newFile1.txt
+
+#Ignoring files by extension
+# *.txt
+
+#Ignoring directories
+# /newDirectory/
+
+#Ignoring files in specific directories
+# /newDirectory/*.txt
+
+# Ignoring files recursively
+# **/newFile2.js
+
+# Negating a pattern
+# !newFile2.js

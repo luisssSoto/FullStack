@@ -4,7 +4,7 @@
 console.log(3 == '3');
 
 //Not Equal !== 
-console.log(3 !== '3');
+console.log(3 != '3');
 
 //Strict Equal === doesn't cast the operands before, neither after
 console.log(3 === '3');

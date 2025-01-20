@@ -83,7 +83,7 @@ class ShapeUtility {
     };
     filterShapesByInfoPart(shapesList, infoPart) {
         let filteredShapes = shapesList.filter((shape) => {
-            return (shape.getInfo().includes(infoPart.name)) || (shape.getInfo().includes(infoPart.color));
+            return (shape.getInfo().includes(infoPart[0])) || (shape.getInfo().includes(infoPart[1]));
         });
         return filteredShapes;
     };
@@ -96,6 +96,9 @@ let shapesList = [rectangle1, rectangle2, circle1];
 let shapeUtility1 = new ShapeUtility(23, 50);
 let filteredShapes = shapeUtility1.filterShapes(shapesList);
 console.log(filteredShapes);
+console.log();
 
 // Create new method, but instead of minArea and maxArea it has second parameter "infoPart"
 // Filter collection to return only shapes that contains InfoPart in name or color
+let fileredShapesByNameOrColor = shapeUtility1.filterShapesByInfoPart(shapesList, ['circle#1', 'pink']);
+console.log(fileredShapesByNameOrColor);
