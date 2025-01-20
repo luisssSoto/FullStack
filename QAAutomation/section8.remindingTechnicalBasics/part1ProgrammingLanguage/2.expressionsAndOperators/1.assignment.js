@@ -2,7 +2,7 @@
 //Comparison Operators
 
 //addition
-var x = 1;
+var x = 1 + 1;
 console.log(x);
 
 //substraction

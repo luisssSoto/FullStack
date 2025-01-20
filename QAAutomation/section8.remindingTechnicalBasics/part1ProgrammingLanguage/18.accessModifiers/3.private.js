@@ -32,5 +32,5 @@ console.log(coffeMachine1.waterAmount);
 coffeMachine1.setWaterAmount(199);
 console.log(coffeMachine1.waterAmount);
 
-//You can't access the # private property an d methods
+//You can't access the # private property and methods
 //neither in subclasses

@@ -17,5 +17,3 @@ describe('Testing survey part2', function() {
     //     });
     // });
 });
-
-study modes of git --global, ---system, --local
