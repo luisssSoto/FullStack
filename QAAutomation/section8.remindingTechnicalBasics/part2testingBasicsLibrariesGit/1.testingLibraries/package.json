@@ -11,7 +11,8 @@
     "test:ig": "mocha ./test/2.ignoreTests.js",
     "test:ddt": "mocha ./test/3.DDT.js",
     "test:hooks": "mocha ./test/4.hooks.js",
-    "test:before": "mocha ./test/5.before.js"
+    "test:before": "mocha ./test/5.before.js",
+    "test:before:each": "mocha ./test/specs/6.beforeEach.js"
   },
   "keywords": [],
   "author": "",
