@@ -1,0 +1,21 @@
+Changing the last commit
+
+git commit --amend
+if you want to rewrite the last commit, or if you forgot to add something
+to the staging area, you can use this command.
+
+1. Only rewrite a commit
+git commit --amend
+then the editor will open and rewrite whatever you want
+
+2. Adding or modifying some files
+git add anyFiles
+git commit --amend
+then the editor will open and rewrite whatever you want
+
+Note: if you don't wish to rewrite the message because you only forgot some
+details, you can let the same message (your last commit) following the next
+steps:
+git add anyFiles (modifying certain files a little bit)
+git commit --amend --no-edit
+then the editor will NOT open and the last commit brings the last changes you desire

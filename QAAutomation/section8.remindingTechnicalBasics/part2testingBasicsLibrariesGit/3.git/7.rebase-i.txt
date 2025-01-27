@@ -1,0 +1,38 @@
+Changing Multiple Commit Messages
+
+For example, if you want to change the last three commit messages, or any of the 
+commit messages in that group, you supply as an argument to git rebase -i the parent
+of the last commit you want to edit, which is HEAD~2^ or HEAD~3. 
+
+git rebase -i HEAD~3
+
+Then:
+You need to edit the script so that it stops at the commit you want to edit. To do 
+so, change the word “pick” to the word “edit” for each of the commits you want the 
+script to stop after.
+
+When you save and exit the editor, Git rewinds you back to the last commit in that 
+list and drops you on the command line with the following message:
+
+$ git rebase -i HEAD~3
+Stopped at f7f3f6d... Change my name a bit
+You can amend the commit now, with
+       git commit --amend
+
+Once you're satisfied with your changes, run
+       git rebase --continue
+
+These instructions tell you exactly what to do. Type:
+$ git commit --amend
+
+Change the commit message, and exit the editor. Then, run:
+$ git rebase --continue
+
+This command will apply the other two commits automatically, and then you’re done. 
+If you change pick to edit on more lines, you can repeat these steps for each commit 
+you change to edit. Each time, Git will stop, let you amend the commit, and 
+continue when you’re finished.
+
+Note:
+ Don’t include any commit you’ve already pushed to a central server — doing so 
+ will confuse other developers by providing an alternate version of the same change.
