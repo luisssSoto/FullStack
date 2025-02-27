@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <style>
+        .blue-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: blue;
+            left: 50px;
+            top: 50px;
+            /* z-index: -1; */
+        }
+        div {
+            /* takes the same position as the previous element */
+            position: static; /* html default */
+            /* position relative to default position should be */
+            position: relative; /* in this case left, and top attributes work not like static position*/
+            /* position relative to the nearest positioned ancestor or top left corner of webpage */
+            position: absolute; /* property z-index change with absolute value, it will be at top of the other elements */
+            /* position relative to top left corner of browser window */
+            position: fixed; /* even if you scroll down... the element will continue appears at the same position */
+        }
+    </style>
+</head>
+<body>
+    <h1>You can see a demo here:</h1>
+    <a href="https://appbrewery.github.io/css-positioning/">Css positioning/</a>
+    <div>
+        father
+        <div class="blue-circle"></div>
+    </div>
+    
+</body>
+</html>
