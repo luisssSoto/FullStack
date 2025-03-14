@@ -26,7 +26,7 @@ VALUES (1, 'John', 'Doe', 'McAllen 15')
     VALUES (2, 'Jane', 'Doe', 'McAllen 16')
 
 -- Join two tables by its foreign key and primary key
--- The above example show how to link the order_number with the customer data
+-- The below example show how to link the order_number with the customer data
 SELECT orders.order_number, customers.first_name, customers.last_name, customers.address
 FROM orders
 INNER JOIN customers ON orders.customer_id = customers.id
