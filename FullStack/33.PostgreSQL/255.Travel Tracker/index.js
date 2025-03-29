@@ -34,11 +34,33 @@ db.query("SELECT * FROM visited_countries", (err, res) => {
     });
   };
   console.log(country_code_list);
-  db.end();
+  // db.end();
 });
 
 app.get("/", (req, res) => {
   res.render("index.ejs", {
+    countries: country_code_list,
+    total: total_countries
+  });
+});
+
+app.post("/add", (req, res) => {
+  console.log(req.body);
+  console.log(`req.body.country: ${req.body.country}`);
+  db.query("SELECT * FROM countries WHERE country_name = $1", [req.body.country], (err, result) => {
+    if (err) {
+      console.log(`ERROR: ${err.stack}`);
+    } else {
+      console.log(result.rows);
+      console.log(result.rows[0].country_code);
+      console.log(result.rows[0].country_name);
+      db.query("INSERT INTO visited_countries (country_code) VALUES ($1)",
+        [result.rows[0].country_code]
+      );
+    };
+  });
+  res.render("index.ejs", {
+    // country_code_list.push(result.rows[0].country_code);
     countries: country_code_list,
     total: total_countries
   });
