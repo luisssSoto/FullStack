@@ -2,6 +2,7 @@ node_modules
 allure-results
 allure-report
 QAAutomation/section3Framework/framework/configs/textBoxData.json
+QAAutomation/section3Framework/framework/configs/swagLabsData.json
 QAAutomation/section3Framework/.env
 QAAutomation/section4Allure/framework/configs/data.json
 
