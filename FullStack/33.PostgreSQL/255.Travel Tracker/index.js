@@ -28,6 +28,7 @@ app.get("/", async (req, res) => {
     country_code_list.push(country.country_code);
   });
   res.render("index.ejs", {
+    // country_code_list.push(result.rows[0].country_code);
     countries: country_code_list,
     total_countries: total_countries
   });
