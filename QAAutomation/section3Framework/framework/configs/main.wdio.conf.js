@@ -18,7 +18,7 @@ export const mainConfig = {
     userName: process.env.EMAIL,
     password: process.env.PASSWORD,
     secret: process.env.SECRET,
-    baseUrl: "https://demoqa.com/",
+    baseUrl: "https://www.saucedemo.com/",
     waitforTimeout: 0,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
@@ -40,4 +40,4 @@ export const mainConfig = {
         }
     },
 }
-export const encryptedData = CryptoJS.AES.encrypt(JSON.stringify(data), mainConfig.secret).toString();
+// export const encryptedData = CryptoJS.AES.encrypt(JSON.stringify(data), mainConfig.secret).toString();

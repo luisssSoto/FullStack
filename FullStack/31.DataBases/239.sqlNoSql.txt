@@ -1,0 +1,7 @@
+Feature	    SQL(Structure Query Language)               NoSQL
+Structure	Relational	                                Non-relational
+Schema	    Schema-based	                            Schema-less or flexible
+Data Types	Primarily structured	                    Supports various data types
+Scalability	Can be challenging to scale horizontally	Generally more scalable horizontally
+Use Cases	Traditional business applications	        Big data, content management, mobile
+Examples    MySQL, PostgreSQL, Oracle                   MongoDB, MariaDB, Redis
