@@ -5,7 +5,7 @@ QAAutomation/section3Framework/framework/configs/textBoxData.json
 QAAutomation/section3Framework/framework/configs/swagLabsData.json
 QAAutomation/section3Framework/.env
 QAAutomation/section4Allure/framework/configs/data.json
-*package-lock.json
+**/package-lock.json
 
 #Ignoring files by name
 # newFile1.txt
