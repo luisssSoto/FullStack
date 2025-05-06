@@ -5,4 +5,10 @@
     "cucumber.glue": [
         "QAAutomation/section5BDDCucumber/test/step-definitions/**/*.js"
     ],
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
 }
