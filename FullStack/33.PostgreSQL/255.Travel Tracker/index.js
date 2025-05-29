@@ -11,7 +11,7 @@ app.use(express.static("public"));
 const db = new pg.Client({
   user: "postgres",
   host: "localhost",
-  database: "countries",
+  database: "world",
   password: "postgres",
   port: 5432
 });
@@ -30,9 +30,22 @@ app.get("/", async (req, res) => {
   });
   total_countries = country_code_list.length;
   console.log(`Country Code List: ${country_code_list}`);
+  let invalidElement = req.query.invalid_element;
+  console.log(`invalidElement ${invalidElement}`);
+  let existInvalidElement = invalidElement ? true : false;
+  let duplicateElement = req.query.duplicate_element;
+  console.log(`Duplicate element error: ${typeof duplicateElement}`);
+  let duplicateElementError = "";
+  if (typeof duplicateElement === "string") {
+    duplicateElementError = `Country: ${duplicateElement} has already been added, try it again`;
+  }
   res.render("index.ejs", {
     countries: country_code_list,
-    total_countries: total_countries
+    total_countries: total_countries,
+    invalid_element: invalidElement,
+    exist_invalid_element: existInvalidElement,
+    duplicate_element : duplicateElement,
+    error: duplicateElementError
   });
   // db.end();
 });
@@ -43,10 +56,19 @@ app.post("/add", async (req, res) => {
   console.log(`correct sintax query: ${correctSintaxQuery}`);
   let new_country = await db.query("SELECT country_code FROM countries WHERE country_name = ($1)", [correctSintaxQuery]);
   console.log(`New Country: ${JSON.stringify(new_country.rows)}`);
-  db.query("INSERT INTO visited_countries (country_code) VALUES ($1)",
-    [new_country.rows[0].country_code]
-  );
-  res.redirect("/");
+  if (new_country.rows.length === 0) {
+    res.redirect("/?invalid_element=" + encodeURIComponent(correctSintaxQuery));
+  } else {
+    try {
+      await db.query("INSERT INTO visited_countries (country_code) VALUES ($1)",
+        [new_country.rows[0].country_code]
+      );
+      res.redirect("/");
+    } catch (e) {
+      console.error(`ERROR: ${e}`);
+      res.redirect("/?duplicate_element=" + encodeURIComponent(correctSintaxQuery));
+    };
+  };
 });
 
 let title = (str) => {
