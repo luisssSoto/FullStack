@@ -1,3 +1,6 @@
+-- Create a database
+CREATE DATABASE world OWNER postgres;   
+
 -- Create capitals table
 CREATE TABLE capitals (
     id SERIAL PRIMARY KEY,

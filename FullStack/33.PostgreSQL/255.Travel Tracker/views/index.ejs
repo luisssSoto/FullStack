@@ -374,6 +374,15 @@
   <h2 class="total-count">Total Countries: <%=total_countries%>
   </h2>
   <script>
+    let nonExisten = "<%= invalid_element %> ";
+    let existInvalidElement = "<%= exist_invalid_element %>";
+    if (existInvalidElement === "true") {
+      alert(`it seems like ${nonExisten} doesn't exist in our DB, try it again`);
+    };
+    let duplicateElement = "<%= duplicate_element %>"
+    if (duplicateElement) {
+      alert(`The element ${duplicateElement} which you try to look up, is already register`)
+    };
     console.log("My countries: <%= total_countries %>");
     const country_codes = "<%= countries %>".split(",");
     console.log(country_codes);
